@@ -14,24 +14,26 @@
     <main id="container">
       <div class="btnFilter">
         <div class="first-btn">
-          <button>All</button>
-          <button>Frontend</button>
-          <button>Backend</button>
-          <button>Fullstack</button>
+          <button onclick="filterData([])">All</button>
+          <button onclick="filterData(['Frontend'])">Frontend</button>
+          <button onclick="filterData(['Backend'])">Backend</button>
+          <button onclick="filterData(['Fullstack'])">Fullstack</button>
         </div>
 
         <div class="second-btn">
-          <button>Fullstack</button>
-          <button>Junior</button>
+          <button onclick="filterData(['Fullstack'])">Fullstack</button>
+          <button onclick="filterData(['Junior'])">Junior</button>
         </div>
 
         <div class="third-btn">
-          <button>Midweight</button>
-          <button>Senior</button>
+          <button onclick="filterData(['Midweight'])">Midweight</button>
+          <button onclick="filterData(['Senior'])">Senior</button>
         </div>
       </div>
 
       <div id="job-listings"></div>
     </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
