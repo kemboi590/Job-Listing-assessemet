@@ -20,6 +20,11 @@ function filterData(filters) {
   renderData();
 }
 
+function clearFilters() {
+  selectedFilters = [];
+  renderData();
+}
+
 function renderData() {
   const jobListings = document.getElementById("job-listings");
   jobListings.innerHTML = ""; // Clear previous listings
