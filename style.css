@@ -1,355 +1,353 @@
-#header{
-    background-color: hsl(180, 8%, 52%); 
-    width: 100%;
-    height: 100px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.headerIMG{
-    width: 100%;
-    height: 100%;
+#header {
+  background-color: hsl(180, 8%, 52%);
+  width: 100%;
+  height: 100px;
 }
-
-@media screen and (max-width: 455px){
-    #header{
-        background-color: hsl(180, 8%, 52%); 
-        width: 450px;
-        height: 50px;
-    }
+.headerIMG {
+  width: 100%;
+  height: 100%;
 }
 
+button {
+  cursor: pointer;
+  border: none;
 
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.22);
+  transition: 0.3s;
+}
 
+/* button dance on hover */
+button:hover {
+  transform: translateY(-3px);
+}
 
+@media screen and (max-width: 455px) {
+  #header {
+    background-color: hsl(180, 8%, 52%);
+    width: 450px;
+    height: 50px;
+  }
+
+  button:hover {
+    transform: none;
+  }
+}
 
 .filter-options label {
-    gap: 1.5rem;
-    color: hsl(180, 14%, 20%);
-    font-weight: 500;
-    font-family: league spartan;
+  gap: 1.5rem;
+  color: hsl(180, 14%, 20%);
+  font-weight: 500;
+  font-family: league spartan;
 }
 .filter-options select {
-    padding-left: 10px;
-    height: 20px;
-    border-radius: 5px;
-    border: 1px solid hsl(180, 9%, 52%);
-    background-color: hsl(180, 52%, 96%);
+  padding-left: 10px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid hsl(180, 9%, 52%);
+  background-color: hsl(180, 52%, 96%);
 }
-.card{
-    background-color: #fff;
-    box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.22);
-    -webkit-box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.22);
-    -moz-box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.22);
-    height: 100px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    display: flex;
-    border-radius: 5px;
+.card {
+  background-color: #fff;
+  box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.22);
+  height: 100px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  border-radius: 5px;
 }
-.current{
-    background-color: hsl(180, 8%, 52%);
-    padding: 5px;
-    margin-inline: 5px;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
+.current {
+  background-color: hsl(180, 8%, 52%);
+  padding: 5px;
+  margin-inline: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
 }
-.featured{
-    background-color: hsl(180, 14%, 20%);
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    margin-left: 2px;  
-    color: #fff;
-    border-radius: 5px;
-    margin-inline: 5px;
+.featured {
+  background-color: hsl(180, 14%, 20%);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
+  color: #fff;
+  border-radius: 5px;
+  margin-inline: 5px;
+  font-size: 15px;
 }
 
 /* added button filters */
-.btnFilter{
+.btnFilter {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  gap: 20px;
+}
+.first-btn {
+  display: flex;
+  gap: 20px;
+}
+.second-btn {
+  display: flex;
+  gap: 20px;
+}
+.third-btn {
+  display: flex;
+  gap: 20px;
+}
+.btnFilter button {
+  padding: 4px;
+  border-radius: 5px;
+}
+.btnFilter button:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+}
+
+/* added button filters */
+
+#mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+#cardimg {
+  height: 60px;
+  width: 60px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.left {
+  margin-left: 10px;
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  height: 20px;
+  margin-left: 15px;
+  margin-top: 10px;
+  gap: 2.5rem;
+}
+.top .companyName {
+  font-family: league spartan;
+  font-weight: 800;
+  color: hsl(180, 29%, 50%);
+}
+.upper {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.upper .current {
+  margin-inline: 5px;
+  width: 40px;
+  text-align: center;
+  font-family: league spartan;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  background-color: hsl(180, 29%, 50%);
+  border-radius: 15px;
+}
+.upper .featured {
+  width: 70px;
+  text-align: center;
+  margin-inline: 5px;
+  font-family: league spartan;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  background-color: hsl(180, 14%, 20%);
+  border-radius: 15px;
+}
+.middle {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.middle .position {
+  font-family: league spartan;
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(180, 2%, 8%);
+}
+.middle .position:hover {
+  font-family: league spartan;
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(180, 29%, 50%);
+}
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: fit-content;
+  margin-right: 10px;
+  gap: 0.5rem;
+  color: hsl(180, 29%, 50%);
+}
+.role {
+  background-color: hsl(180, 52%, 96%);
+  padding: 5px;
+  border-radius: 5px;
+}
+.role:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+}
+.level {
+  background-color: hsl(180, 52%, 96%);
+  padding: 5px;
+  border-radius: 5px;
+}
+.level:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+}
+.languages {
+  background-color: hsl(180, 52%, 96%);
+  padding: 5px;
+  border-radius: 5px;
+}
+.languages:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+}
+.tools {
+  background-color: hsl(180, 52%, 96%);
+  padding: 5px;
+  border-radius: 5px;
+}
+.tools:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+}
+.bottom {
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top: 10px;
+  gap: 1.5rem;
+}
+.bottom .postedAt .fulltime .location {
+  font-family: league spartan;
+  font-weight: 500;
+  color: hsl(180, 8%, 52%);
+}
+
+/* Media query for phones with max-with of 600px */
+@media screen and (max-width: 715px) {
+  .card {
+    min-height: 200px;
+    height: fit-content;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: fit-content;
+    flex-direction: column;
+  }
+
+  /* added button filters */
+  .btnFilter {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
-    gap: 20px;
-}
-.first-btn{
+    gap: 10px;
+  }
+  .first-btn {
     display: flex;
-    gap: 20px;
-
-}
-.second-btn{
+    gap: 10px;
+  }
+  .second-btn {
     display: flex;
-    gap: 20px; 
-}
-.third-btn{
+    gap: 10px;
+  }
+  .third-btn {
     display: flex;
-    gap: 20px; 
-}
-.btnFilter button{
+    gap: 10px;
+  }
+  .btnFilter button {
     padding: 4px;
     border-radius: 5px;
-  
-}
-.btnFilter button:hover{
+  }
+  .btnFilter button:hover {
     background-color: hsl(180, 29%, 50%);
     color: white;
+  }
 
-}
+  /* added button filters */
 
-
-/* added button filters */
-
-
-#mainContent{
-    display: flex;
+  #cardimg {
+    height: 50px;
+    width: 50px;
+    margin-top: -45px;
+  }
+  .middle {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  }
+  .middle .position {
     margin-top: 10px;
-
-}
-#cardimg {
-    height: 60px;
-    width: 60px;
-    padding-top: 20px;
-    padding-left: 10px;
-}
-.left {
-    margin-left: 10px;
-    width: 100%;
-}
-
-.top {
-    display: flex;
-    flex-direction: row;
-    width: 400px;
-    height: 20px;
-    margin-left: 15px;
-    margin-top: 10px;
-    gap: 2.5rem;
-}
-.top .companyName {
-    font-family: league spartan;
-    font-weight: 800;
-    color: hsl(180, 29%, 50%);
-}
-.upper {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-}
-.upper .current {
-    margin-inline: 5px;
-    width: 40px;
-    text-align: center;
-    font-family: league spartan;
-    font-weight: 700;
-    font-size: 15px;
-    color: #fff;
-    background-color: hsl(180, 29%, 50%);
-    border-radius: 15px;
-    
-}
-.upper .featured {
-    width: 70px;
-    text-align: center;
-    margin-inline: 5px;
-    font-family: league spartan;
-    font-weight: 700;
-    font-size: 15px;
-    color: #fff;
-    background-color: hsl(180, 14%, 20%);
-    border-radius: 15px;
-}
-.middle {
-    margin-top: 5px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 15px;
-    gap: 0.5rem;
-    justify-content: space-between;
-}
-
-.middle .position {
-    font-family: league spartan;
-    font-size: 15px;
-    font-weight: 700;
-    color: hsl(180, 2%, 8%);
-}
-.middle .position:hover {
-    font-family: league spartan;
-    font-size: 15px;
-    font-weight: 700;
-    color: hsl(180, 29%, 50%);
-}
-.right {
+  }
+  .bottom {
+    margin-top: 20px;
+  }
+  .right {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: fit-content;
     margin-right: 10px;
-    gap: 0.5rem;
-    color: hsl(180, 29%, 50%);
-   
+    margin-top: 12px;
+  }
 }
-.role  {
-    
-    background-color: hsl(180, 52%, 96%);
-    padding: 5px;
-    border-radius: 5px;
-}
-.role:hover {
-    background-color: hsl(180, 29%, 50%);
-    color: white;
-}
-.level {
-    background-color: hsl(180, 52%, 96%);
-    padding: 5px;
-    border-radius: 5px;
-}
-.level:hover {
-    background-color: hsl(180, 29%, 50%);
-    color: white;
-}
-.languages {
-    background-color: hsl(180, 52%, 96%);
-    padding: 5px;
-    border-radius: 5px;
-}
-.languages:hover {
-    background-color: hsl(180, 29%, 50%);
-    color: white;
-}
-.tools {
-    background-color: hsl(180, 52%, 96%);
-    padding: 5px;
-    border-radius: 5px;
-}
-.tools:hover {
-    background-color: hsl(180, 29%, 50%);
-    color: white;
-}
-.bottom {
-    font-size: 13px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-    margin-top: 10px;
-    gap: 1.5rem;
-}
-.bottom .postedAt .fulltime .location {
-    font-family: league spartan;
-    font-weight: 500;
-    color: hsl(180, 8%, 52%);
-}
-
-/* Media query for phones with max-with of 600px */
-@media screen and (max-width: 715px) {
-    .card{
-        min-height: 200px;
-        height: fit-content;
-        margin-bottom: 30px;
-        margin-top: 30px;
-        width: fit-content;
-        flex-direction: column;
-    }
-
-
-/* added button filters */
-.btnFilter{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    gap: 10px;
-}
-.first-btn{
-    display: flex;
-    gap: 10px;
-
-}
-.second-btn{
-    display: flex;
-    gap: 10px; 
-}
-.third-btn{
-    display: flex;
-    gap: 10px; 
-}
-.btnFilter button{
-    padding: 4px;
-    border-radius: 5px;
-  
-}
-.btnFilter button:hover{
-    background-color: hsl(180, 29%, 50%);
-    color: white;
-
-}
-
-/* added button filters */
-
-    #cardimg {
-        height: 50px;
-        width: 50px;
-        margin-top: -45px;
-    }
-    .middle {
-        flex-direction: column;
-    }
-    .middle .position {
-        margin-top: 10px;
-    }
-    .bottom {
-        margin-top: 20px;
-        
-    }
-    .right {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: fit-content;
-        margin-right: 10px;
-        margin-top: 12px;
-       
-    }
-
-}
-
 
 @media screen and (max-width: 480px) {
-.btnFilter{
+  .btnFilter {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
     gap: 10px;
-}
-.first-btn{
+  }
+  .first-btn {
     flex-direction: column;
     gap: 10px;
-
-}
-.second-btn{
+  }
+  .second-btn {
     flex-direction: column;
-    gap: 10px; 
-}
-.third-btn{
+    gap: 10px;
+  }
+  .third-btn {
     flex-direction: column;
-    gap: 4px; 
-}
-.btnFilter button{
+    gap: 4px;
+  }
+  .btnFilter button {
     padding: 4px;
     border-radius: 5px;
-  
-}
-
-
+  }
 }
